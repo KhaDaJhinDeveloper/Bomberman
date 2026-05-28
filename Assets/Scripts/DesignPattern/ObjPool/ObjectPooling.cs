@@ -13,7 +13,7 @@ public class ObjectPooling : Singleton<ObjectPooling>
 
         ObjectPooling_Instance = this;
     }
-    public void CreatePool(KeyPool key, GameObject prefab,int poolSize)
+    public void CreatePool(KeyPool key, GameObject prefab,int poolSize, Transform parent = null)
     {
         if (prefab == null)
         {
@@ -29,6 +29,7 @@ public class ObjectPooling : Singleton<ObjectPooling>
             {
                 GameObject obj = Instantiate(prefab);
                 obj.SetActive(false);
+                obj.transform.SetParent(parent);
                 queue.Enqueue(obj);
             }
             poolDictionary.Add(key, queue);
