@@ -1,0 +1,22 @@
+using UnityEngine;
+[System.Serializable]
+public enum KeyPool 
+{
+     KEY_BOMB,
+     KEY_EXPLODE, 
+     KEY_BUFF_SPEEDUP, 
+     KEY_BUFF_PASSTHROUGHWALL ,
+     KEY_BUFF_BOMBRANGE ,
+     KEY_BUFF_EXTRABOMB ,
+//Wall
+     KEY_WALL_FIXED ,
+     KEY_WALL_BREAKED ,
+     KEY_FLOOR ,
+//Enemy
+    KEY_ENEMY_RAT ,
+    KEY_ENEMY_GHOST,
+    KEY_ENEMY_SKELETON,
+//SSound
+    KEY_SOUND_MUSICBACKGROUND,
+    KEY_SOUND_MUSICSFX_
+}

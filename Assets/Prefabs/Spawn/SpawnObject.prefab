@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6557512922249404342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4782023610005358992}
+  - component: {fileID: 5296469045972871200}
+  - component: {fileID: 4192727077451213772}
+  - component: {fileID: 6079721711188205996}
+  - component: {fileID: 471525150266458358}
+  m_Layer: 0
+  m_Name: SpawnObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4782023610005358992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557512922249404342}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5296469045972871200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557512922249404342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 310c3102258469c42a5008faa7351a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnBombs
+  poolArray:
+  - key: 0
+    prefabs: {fileID: 8693977078081478510, guid: 86b2940c81cd4b44d847de7660e49861, type: 3}
+    poolSize: 5
+  - key: 1
+    prefabs: {fileID: 2875916348424361189, guid: d30cd4841f8104b41909c185e072fefe, type: 3}
+    poolSize: 20
+--- !u!114 &4192727077451213772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557512922249404342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7f669d0cf0846478bff4cc2a2007a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnBuffs
+  poolArray:
+  - key: 2
+    prefabs: {fileID: 6241828577401880047, guid: e6feba40783527c4fbc33daff5877900, type: 3}
+    poolSize: 5
+  - key: 4
+    prefabs: {fileID: 8776487315102992053, guid: 93461021d147a494e90e5593dd21bae9, type: 3}
+    poolSize: 5
+  - key: 5
+    prefabs: {fileID: 2255678743011047538, guid: 8e1dbfaa230331e46ad88fb28086921e, type: 3}
+    poolSize: 5
+  - key: 3
+    prefabs: {fileID: 8302022195458257995, guid: 983a7e7522e2e8b439f4b366ba11a544, type: 3}
+    poolSize: 5
+--- !u!114 &6079721711188205996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557512922249404342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df463c885b80f340aec4ea5d355da51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnWall
+  poolArray:
+  - key: 6
+    prefabs: {fileID: 5700139745913529746, guid: 4a8ca9b532d9de744b80318cd6e2e7c9, type: 3}
+    poolSize: 50
+  - key: 7
+    prefabs: {fileID: 6844803324426685572, guid: 3a5b9d53248d36344856aa14b9732009, type: 3}
+    poolSize: 50
+  - key: 8
+    prefabs: {fileID: 7221959868906206928, guid: 773390d305ac0fb45a87ec8d567db5a8, type: 3}
+    poolSize: 50
+--- !u!114 &471525150266458358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557512922249404342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8d0fb68b617e045b69187b08db1948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnEnemy
+  poolArray:
+  - key: 9
+    prefabs: {fileID: 76674540398027939, guid: d83c07e0d438ddb489fc1618c1db61cd, type: 3}
+    poolSize: 5
+  - key: 10
+    prefabs: {fileID: 3760041407055737762, guid: d120f0b0cbb5d5846bca9ae4c8286a7e, type: 3}
+    poolSize: 5
+  - key: 11
+    prefabs: {fileID: 653047144205930362, guid: 8a5fdbeb952af214ca24f012eddda50e, type: 3}
+    poolSize: 5

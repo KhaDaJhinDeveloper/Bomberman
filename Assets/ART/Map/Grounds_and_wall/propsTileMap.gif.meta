@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: ec5b0de1d5d656d4cbc82431017c604e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3821824309753313846
+    second: propsTileMap_0
+  - first:
+      213: 4273236803551409600
+    second: propsTileMap_1
+  - first:
+      213: -3340950412490718471
+    second: propsTileMap_2
+  - first:
+      213: 7486485670443226700
+    second: propsTileMap_3
+  - first:
+      213: 7324291615364643830
+    second: propsTileMap_4
+  - first:
+      213: 5170437690641213415
+    second: propsTileMap_5
+  - first:
+      213: -472024823588117318
+    second: propsTileMap_6
+  - first:
+      213: 6356177865892716742
+    second: propsTileMap_7
+  - first:
+      213: 4643479493242516558
+    second: propsTileMap_8
+  - first:
+      213: -5849238417921638099
+    second: propsTileMap_9
+  - first:
+      213: 7131019718839220402
+    second: propsTileMap_10
+  - first:
+      213: -312275289050236967
+    second: propsTileMap_11
+  - first:
+      213: 3913257706486558491
+    second: propsTileMap_12
+  - first:
+      213: -8838142935728874661
+    second: propsTileMap_13
+  - first:
+      213: 7995576580731362705
+    second: propsTileMap_14
+  - first:
+      213: -1203817786609268015
+    second: propsTileMap_15
+  - first:
+      213: -8560342743322795203
+    second: propsTileMap_16
+  - first:
+      213: 8625381668717869025
+    second: propsTileMap_17
+  - first:
+      213: -2343475569829080109
+    second: propsTileMap_18
+  - first:
+      213: 1311682582366836144
+    second: propsTileMap_19
+  - first:
+      213: -8530452457260341745
+    second: propsTileMap_20
+  - first:
+      213: 5974193324823944114
+    second: propsTileMap_21
+  - first:
+      213: 27053782447303880
+    second: propsTileMap_22
+  - first:
+      213: -8977463851956777831
+    second: propsTileMap_23
+  - first:
+      213: -2112150658097669753
+    second: propsTileMap_24
+  - first:
+      213: -3416918079884525170
+    second: propsTileMap_25
+  - first:
+      213: -6732358789661674752
+    second: propsTileMap_26
+  - first:
+      213: -5936453978855716673
+    second: propsTileMap_27
+  - first:
+      213: -8279728912246616431
+    second: propsTileMap_28
+  - first:
+      213: 7577203069008013703
+    second: propsTileMap_29
+  - first:
+      213: 462994272666963167
+    second: propsTileMap_30
+  - first:
+      213: 8827765420622109840
+    second: propsTileMap_31
+  - first:
+      213: 7736205215276187850
+    second: propsTileMap_32
+  - first:
+      213: -6298473873725181562
+    second: propsTileMap_33
+  - first:
+      213: -8429967359564389177
+    second: propsTileMap_34
+  - first:
+      213: 2150093073068013147
+    second: propsTileMap_35
+  - first:
+      213: 4060899150235963196
+    second: propsTileMap_36
+  - first:
+      213: 6124467321712053105
+    second: propsTileMap_37
+  - first:
+      213: -6736396095270075769
+    second: propsTileMap_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: propsTileMap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a7cc8f5f8d90530800000000000000
+      internalID: 3821824309753313846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5bec47b369d4b30800000000000000
+      internalID: 4273236803551409600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2cb4b0d4f82a1d0800000000000000
+      internalID: -3340950412490718471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4612da5d0755e760800000000000000
+      internalID: 7486485670443226700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 96
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb7e2d1b6c15a560800000000000000
+      internalID: 7324291615364643830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 98
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7e5fb7fa511c740800000000000000
+      internalID: 5170437690641213415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 100
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab42dd08ce70379f0800000000000000
+      internalID: -472024823588117318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 99
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c06cb1b71ea53850800000000000000
+      internalID: 6356177865892716742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_8
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 93
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44f7843ff3f07040800000000000000
+      internalID: 4643479493242516558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 95
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21863546a453dea0800000000000000
+      internalID: -5849238417921638099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_10
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 83
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8b7bb07a876f260800000000000000
+      internalID: 7131019718839220402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_11
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 81
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7370477439aabf0800000000000000
+      internalID: -312275289050236967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fe0b5962fae4630800000000000000
+      internalID: 3913257706486558491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b90c193db985580800000000000000
+      internalID: -8838142935728874661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ddceca98ef5fe60800000000000000
+      internalID: 7995576580731362705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_15
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da8bd6e91e2b4fe0800000000000000
+      internalID: -1203817786609268015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_16
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 81
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33e6ac21ad833980800000000000000
+      internalID: -8560342743322795203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_17
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 81
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e73810bde283b770800000000000000
+      internalID: 8625381668717869025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_18
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 84
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d31880b26d4a7fd0800000000000000
+      internalID: -2343475569829080109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_19
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 82
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5da0ceb58043210800000000000000
+      internalID: 1311682582366836144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06a3a7bfaebd9980800000000000000
+      internalID: -8530452457260341745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_21
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb14a12d2998e250800000000000000
+      internalID: 5974193324823944114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc2a94954d106000800000000000000
+      internalID: 27053782447303880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cc438f034a96380800000000000000
+      internalID: -8977463851956777831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_24
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 63
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7891bf7ca2220b2e0800000000000000
+      internalID: -2112150658097669753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_25
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 68
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e818fd52c1ba490d0800000000000000
+      internalID: -3416918079884525170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 63
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003bcb1b95bd192a0800000000000000
+      internalID: -6732358789661674752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_27
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 69
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8c9d41f8a7d9da0800000000000000
+      internalID: -5936453978855716673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 42
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e42051c6e781d80800000000000000
+      internalID: -8279728912246616431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_29
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 42
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789e837ab02a72960800000000000000
+      internalID: 7577203069008013703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 42
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcca5386d2ec6600800000000000000
+      internalID: 462994272666963167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_31
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 42
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c58a8e0e5828a70800000000000000
+      internalID: 8827765420622109840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0cf06b7a58c5b60800000000000000
+      internalID: 7736205215276187850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6813881f1635798a0800000000000000
+      internalID: -6298473873725181562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_34
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4e601b95db20b80800000000000000
+      internalID: -8429967359564389177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_35
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b563f3e124aa6dd10800000000000000
+      internalID: 2150093073068013147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_36
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f0086f2463b5830800000000000000
+      internalID: 4060899150235963196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b822d849a7ef450800000000000000
+      internalID: 6124467321712053105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: propsTileMap_38
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782491b31738382a0800000000000000
+      internalID: -6736396095270075769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5c93075fb64f84b489d9e2350f160691
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      propsTileMap_0: 3821824309753313846
+      propsTileMap_1: 4273236803551409600
+      propsTileMap_10: 7131019718839220402
+      propsTileMap_11: -312275289050236967
+      propsTileMap_12: 3913257706486558491
+      propsTileMap_13: -8838142935728874661
+      propsTileMap_14: 7995576580731362705
+      propsTileMap_15: -1203817786609268015
+      propsTileMap_16: -8560342743322795203
+      propsTileMap_17: 8625381668717869025
+      propsTileMap_18: -2343475569829080109
+      propsTileMap_19: 1311682582366836144
+      propsTileMap_2: -3340950412490718471
+      propsTileMap_20: -8530452457260341745
+      propsTileMap_21: 5974193324823944114
+      propsTileMap_22: 27053782447303880
+      propsTileMap_23: -8977463851956777831
+      propsTileMap_24: -2112150658097669753
+      propsTileMap_25: -3416918079884525170
+      propsTileMap_26: -6732358789661674752
+      propsTileMap_27: -5936453978855716673
+      propsTileMap_28: -8279728912246616431
+      propsTileMap_29: 7577203069008013703
+      propsTileMap_3: 7486485670443226700
+      propsTileMap_30: 462994272666963167
+      propsTileMap_31: 8827765420622109840
+      propsTileMap_32: 7736205215276187850
+      propsTileMap_33: -6298473873725181562
+      propsTileMap_34: -8429967359564389177
+      propsTileMap_35: 2150093073068013147
+      propsTileMap_36: 4060899150235963196
+      propsTileMap_37: 6124467321712053105
+      propsTileMap_38: -6736396095270075769
+      propsTileMap_4: 7324291615364643830
+      propsTileMap_5: 5170437690641213415
+      propsTileMap_6: -472024823588117318
+      propsTileMap_7: 6356177865892716742
+      propsTileMap_8: 4643479493242516558
+      propsTileMap_9: -5849238417921638099
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
