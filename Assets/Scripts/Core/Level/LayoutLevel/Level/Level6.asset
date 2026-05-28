@@ -15,7 +15,9 @@ MonoBehaviour:
   with: 28
   height: 13
   wallBreakingDensity: 0
-  itemDensity: []
+  itemDensity:
+  - buff: {fileID: 11400000, guid: 5df3dc968d84a6e41bf53b187c0633ae, type: 2}
+    amount: 1
   enemies:
   - keyEnemy: 9
     amount: 5
