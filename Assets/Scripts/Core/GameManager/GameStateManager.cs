@@ -15,13 +15,13 @@ public class GameStateManager: Singleton<GameStateManager>
     }
     #endregion
     #region GameState
-
     public void NewGame()
     {
         Time.timeScale = 1f;
         LevelManager.Instance.ResetLevel();
         this.enemyDensity = 0;
         SceneManager.LoadScene("SinglePlayer");
+        SoundManager.Instance.PlayMusicBG(SoundManager.Instance.bg_Play);
     }
     public void ReTry()
     {
@@ -53,6 +53,7 @@ public class GameStateManager: Singleton<GameStateManager>
     public void ReturnMainMenu()
     {
         Time.timeScale = 1f;
+        SoundManager.Instance.PlayMusicBG(SoundManager.Instance.bg_MainMenu);
         SceneManager.LoadScene("MainMenu");
     }
     #endregion

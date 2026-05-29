@@ -1302,6 +1302,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
   audioBG: {fileID: 6445772794521930928, guid: 094122e82c51f4b49a8af3f41e3e3df7, type: 3}
   audioSFX: {fileID: 7982839392241744765, guid: 56acb1cb4b28cee4cabe43d8c2d2db8c, type: 3}
+  volumeBG: 0
+  volumeSFX: 0
+  test: {fileID: 8300000, guid: bdacba0a647a5b348aa7ca0bd215badf, type: 3}
 --- !u!1001 &618592628
 PrefabInstance:
   m_ObjectHideFlags: 0
