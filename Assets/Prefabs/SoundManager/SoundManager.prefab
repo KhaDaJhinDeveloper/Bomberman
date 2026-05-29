@@ -49,3 +49,12 @@ MonoBehaviour:
   volumeBG: 1
   volumeSFX: 1
   bg_MainMenu: {fileID: 8300000, guid: bdacba0a647a5b348aa7ca0bd215badf, type: 3}
+  bg_Play: {fileID: 8300000, guid: a6b76f225c7a8c445bba3efc87612e34, type: 3}
+  sfx_PlantingBomb: {fileID: 8300000, guid: b04933d465c72b8438c66ba45afdd831, type: 3}
+  sfx_Explode: {fileID: 8300000, guid: 5586ff5e2b91bdd4887792439794e683, type: 3}
+  sfx_PickBuff: {fileID: 8300000, guid: 5671b334a64f3d0489185a7afe8bfd8f, type: 3}
+  sfx_PlayerDie: {fileID: 8300000, guid: 6925053dba041b348a0f56f3d2f776cb, type: 3}
+  sfx_LoadLevel: {fileID: 8300000, guid: f87214e7f909a124e94c9195b680c9bf, type: 3}
+  sfx_PassLevel: {fileID: 8300000, guid: 33764cde3c79cf044b1c65a24590b14a, type: 3}
+  sfx_PressButton: {fileID: 8300000, guid: dbde17ad834f5aa459c703cbdbfbe4b4, type: 3}
+  sfx_EnemyDeath: {fileID: 8300000, guid: 51eb1d0871d286a44bb1b4e25647e3d3, type: 3}

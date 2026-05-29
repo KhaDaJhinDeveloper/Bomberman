@@ -26,14 +26,16 @@ public class GameStateManager: Singleton<GameStateManager>
     public void ReTry()
     {
         Time.timeScale = 1f;
+        this.enemyDensity = 0;
         LevelManager.Instance.ResetLevel();
         EventManager.Instance.TriggerEvent(EventName.EVENT_GAMEOVERUI_HIDE);
-        this.enemyDensity = 0;
+        SoundManager.Instance.PlayMusicBG(SoundManager.Instance.bg_Play);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void NextLevel()
     {
         LevelManager.Instance.NextLevel();
+        SoundManager.Instance.PlayMusicBG(SoundManager.Instance.bg_Play);
         EventManager.OP_EventManager.TriggerEvent(EventName.EVENT_BOARD_LOADLEVEL);
     }
     public void Resume()
@@ -48,6 +50,8 @@ public class GameStateManager: Singleton<GameStateManager>
     }
     public void GameOver()
     {
+        SoundManager.Instance.StopPlayMusicBG();
+        SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PlayerDie);
         EventManager.Instance.TriggerEvent(EventName.EVENT_GAMEOVERUI_SHOW);
     }
     public void ReturnMainMenu()

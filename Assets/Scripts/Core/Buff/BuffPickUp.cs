@@ -12,6 +12,7 @@ public class BuffPickUp : MonoBehaviour
             {
                 BuffManager.S_BuffInstance.ApplyBuff(buffData);
                 ObjectPooling.Instance.ReturnToPool(this.buffData.buffKey, this.gameObject);
+                SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PickBuff);
             }
         }
         if (collision.gameObject.CompareTag(Tag.TAG_WALLBREAK))

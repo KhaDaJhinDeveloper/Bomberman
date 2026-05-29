@@ -37,6 +37,8 @@ public class TransitionScene : Singleton<TransitionScene>
 
         try
         {
+            SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_LoadLevel);
+            SoundManager.Instance.StopPlayMusicBG();
             this.gameObject.SetActive(true);
             this.transitionUI.SetActive(true);
 

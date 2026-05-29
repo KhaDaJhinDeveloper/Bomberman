@@ -691,6 +691,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321177122}
   m_CullTransparentMesh: 1
+--- !u!1001 &343481235
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.93796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.34058
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674030352176749127, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8397970380414052630, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1316efa2a9d96b34e965913e8194db20, type: 3}
 --- !u!1 &405981179 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4049559051708491243, guid: 3757b474eeb1b06468e2a8ccb1d45109, type: 3}
@@ -1256,55 +1313,6 @@ RectTransform:
   m_AnchoredPosition: {x: -4.999954, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &613100965
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 613100966}
-  - component: {fileID: 613100967}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &613100966
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613100965}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &613100967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613100965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303b36be6d5ad0c4d894ddee1bfe3eef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  audioBG: {fileID: 6445772794521930928, guid: 094122e82c51f4b49a8af3f41e3e3df7, type: 3}
-  audioSFX: {fileID: 7982839392241744765, guid: 56acb1cb4b28cee4cabe43d8c2d2db8c, type: 3}
-  volumeBG: 0
-  volumeSFX: 0
-  test: {fileID: 8300000, guid: bdacba0a647a5b348aa7ca0bd215badf, type: 3}
 --- !u!1001 &618592628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5549,8 +5557,8 @@ SceneRoots:
   - {fileID: 8433647202186017294}
   - {fileID: 34096563364300623}
   - {fileID: 3865992385003656723}
+  - {fileID: 343481235}
   - {fileID: 918242166}
-  - {fileID: 613100966}
   - {fileID: 1890012911}
   - {fileID: 306091680}
   - {fileID: 1242387742}

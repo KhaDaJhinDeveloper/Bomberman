@@ -11,8 +11,18 @@ public class SoundManager : Singleton<SoundManager>
     private AudioSource currentMusicBG;
     #endregion
     [Header("SoundAsset")]
+    //BG
     public AudioClip bg_MainMenu;
     public AudioClip bg_Play;
+    //SFX
+    public AudioClip sfx_PlantingBomb;
+    public AudioClip sfx_Explode;
+    public AudioClip sfx_PickBuff;
+    public AudioClip sfx_PlayerDie;
+    public AudioClip sfx_LoadLevel;
+    public AudioClip sfx_PassLevel;
+    public AudioClip sfx_PressButton;
+    public AudioClip sfx_EnemyDeath;
     protected override void Awake()
     {
         base.Awake();

@@ -47,7 +47,8 @@ public class Bomb : MonoBehaviour
     }   
     void Explode(Vector2Int original, int radius)
     {
-        foreach(var pos in this.direction)
+        SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_Explode);
+        foreach (var pos in this.direction)
         {
             ExplodeCell(original);
             for (int i = 1; i <= radius; i++)

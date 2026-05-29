@@ -17,7 +17,7 @@ public class PlantingBombs : MonoBehaviour
         if(this.board.BombsExist(pos)) return;
         GameObject bombObj = ObjectPooling.Instance.GetPool(KeyPool.KEY_BOMB);       
         if (bombObj == null) return;
-
+        SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PlantingBomb);
         bombObj.transform.position = new Vector3(pos.x, pos.y, 0);
         this.board.MarkTheBombLocation(pos);
         this.playerStats.extraBomb--;

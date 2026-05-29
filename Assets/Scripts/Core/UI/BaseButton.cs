@@ -20,6 +20,6 @@ public class BaseButton : MonoBehaviour
     }
     protected virtual void OnClick()
     {
-
+        SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PressButton);
     }
 }

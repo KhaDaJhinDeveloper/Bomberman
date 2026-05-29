@@ -47,6 +47,7 @@ public class Rat_Behavior : RatController
     }
     IEnumerator Death()
     {
+        SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_EnemyDeath);
         this.currentState = null;
         this.colli2D.enabled = false;
         this.rb.linearVelocity = Vector2.zero;

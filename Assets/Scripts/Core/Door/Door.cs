@@ -17,7 +17,7 @@ public class Door : MonoBehaviour
         {
             if (GameStateManager.Instance.CanNextLevel() && !this.isTriggerWall)
             {
-                TransitionScene.Instance.PlayTransition(() => GameStateManager.Instance.NextLevel());
+                StartCoroutine(NextLevel());
             }
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Explode") && !this.isTriggerWall)
@@ -55,6 +55,12 @@ public class Door : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         this.isTriggerWall = false;
+    }
+    private IEnumerator NextLevel()
+    {
+        SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PassLevel);
+        yield return new WaitForSeconds(3f);
+        TransitionScene.Instance.PlayTransition(() => GameStateManager.Instance.NextLevel());
     }
     private void OnDestroy()
     {
