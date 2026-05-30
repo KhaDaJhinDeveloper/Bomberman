@@ -29,8 +29,8 @@ public class GameStateManager: Singleton<GameStateManager>
         this.enemyDensity = 0;
         LevelManager.Instance.ResetLevel();
         EventManager.Instance.TriggerEvent(EventName.EVENT_GAMEOVERUI_HIDE);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
         SoundManager.Instance.PlayMusicBG(SoundManager.Instance.bg_Play);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void NextLevel()
     {

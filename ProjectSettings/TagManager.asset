@@ -8,6 +8,8 @@ TagManager:
   - WallBreak
   - WallFixed
   - Explode
+  - MusicBG
+  - MusicSFX
   layers:
   - Default
   - TransparentFX

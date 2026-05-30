@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class SoundManager : Singleton<SoundManager>
@@ -9,6 +10,9 @@ public class SoundManager : Singleton<SoundManager>
     public float volumeBG = 1;
     public float volumeSFX = 1;
     private AudioSource currentMusicBG;
+    private AudioSource[] arrayAudio;
+    private AudioSource[] arrayAudioBG;
+    private AudioSource[] arrayAudioSFX;
     #endregion
     [Header("SoundAsset")]
     //BG
@@ -36,6 +40,9 @@ public class SoundManager : Singleton<SoundManager>
     {
         ObjectPooling.Instance.CreatePool(KeyPool.KEY_SOUND_MUSICBACKGROUND, this.audioBG.gameObject, 3, this.transform);
         ObjectPooling.Instance.CreatePool(KeyPool.KEY_SOUND_MUSICSFX, this.audioSFX.gameObject, 8, this.transform);
+        this.arrayAudio = GameObject.FindObjectsByType<AudioSource>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        this.arrayAudioBG = this.arrayAudio.Where(s => s.CompareTag(Tag.TAG_BGSOUND)).ToArray();
+        this.arrayAudioSFX = this.arrayAudio.Where(s => s.CompareTag(Tag.TAG_SFXSOUND)).ToArray();
     }
     #region MusicBG
     public void PlayMusicBG(AudioClip clipBG)
@@ -56,12 +63,19 @@ public class SoundManager : Singleton<SoundManager>
         }               
         this.currentMusicBG = null;
     }
+    public void SetVolumeBG(float value)
+    {
+        value = Mathf.Clamp01(value);
+        foreach(AudioSource audiBG in this.arrayAudioBG)
+             audiBG.volume = value; 
+    }
     #endregion
     #region MusicSFX
     public void PlayMusicSFX(AudioClip clipSFX)
     {
         AudioSource audioSFX = ObjectPooling.Instance.GetPool(KeyPool.KEY_SOUND_MUSICSFX, this.transform).GetComponent<AudioSource>();
         audioSFX.clip = clipSFX;
+        audioSFX.volume = this.volumeSFX;
         audioSFX.Play();
         StartCoroutine(ReturnSFX(audioSFX, clipSFX.length));
     } 
@@ -69,6 +83,12 @@ public class SoundManager : Singleton<SoundManager>
     {
         yield return new WaitForSeconds(time);
         ObjectPooling.Instance.ReturnToPool(KeyPool.KEY_SOUND_MUSICSFX, objSfx.gameObject);
+    }
+    public void SetVolumeSFX(float value)
+    {
+        value = Mathf.Clamp01(value);
+        foreach (AudioSource audiSFX in this.arrayAudioSFX)
+            audiSFX.volume = value;
     }
     #endregion
 }

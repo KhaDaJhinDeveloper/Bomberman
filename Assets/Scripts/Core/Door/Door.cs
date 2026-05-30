@@ -58,6 +58,7 @@ public class Door : MonoBehaviour
     }
     private IEnumerator NextLevel()
     {
+        SoundManager.Instance.StopPlayMusicBG();
         SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PassLevel);
         yield return new WaitForSeconds(3f);
         TransitionScene.Instance.PlayTransition(() => GameStateManager.Instance.NextLevel());
