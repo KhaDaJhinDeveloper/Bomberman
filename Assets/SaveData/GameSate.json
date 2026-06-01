@@ -1,0 +1,13 @@
+{
+    "health": 1,
+    "speed": 4.0,
+    "bombRange": 1,
+    "extraBomb": 1,
+    "canPassThroughWall": false,
+    "playerPosition": {
+        "x": 2.931905746459961,
+        "y": 5.4126996994018559,
+        "z": 0.0
+    },
+    "currentLevel": 0
+}

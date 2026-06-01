@@ -131,7 +131,6 @@ public class Board : MonoBehaviour
     public void PlaceBuffs()
     {
         int inDex = 0;
-        int amount = 0;
         for (int i = this.wallBreaksList.Count - 1; i > 0; i--)
         {
             int j = Random.Range(0, i + 1);
@@ -141,7 +140,8 @@ public class Board : MonoBehaviour
         }
         foreach (Item item in this.levelInput.itemDensity)
         {
-            while(amount < item.amount && inDex < this.wallBreaksList.Count)
+            int amount = 0;
+            while (amount < item.amount && inDex < this.wallBreaksList.Count)
             {
                 GameObject buffobj = ObjectPooling.Instance.GetPool(item.buff.buffKey);
                 if (buffobj == null) continue;

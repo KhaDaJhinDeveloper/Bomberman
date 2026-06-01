@@ -22,4 +22,4 @@ MonoBehaviour:
     amount: 1
   enemies:
   - keyEnemy: 9
-    amount: 5
+    amount: 0
