@@ -2,7 +2,7 @@ using Assets.Scripts.NameTag;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum WallType { Empty, WallFixed, WallBreakable, Spawn, Bomb }
+public enum WallType { Empty, WallFixed, WallBreakable, Spawn, Bomb ,Door}
 public class Board : MonoBehaviour
 {
     #region Input
@@ -38,10 +38,29 @@ public class Board : MonoBehaviour
     public void LoadLevel()
     {
         ClearLayoutData();
+        if (!BoardLayoutSaveLoad.Instance.HasData())
+        {
+            GetLayoutLevel();
+            GenerateMap();
+            RenderMap();
+            PlaceBuffs();
+            PlaceEnemies();
+        }
+        else
+        {
+            GetDataLayout();
+            RenderMap();
+        }
+        EventManager.OP_EventManager.TriggerEvent(EventName.EVENT_CAMERA_SETUP);
+    }
+    public void LoadNextLevel()
+    {
+        ClearLayoutData();
         GetLayoutLevel();
         GenerateMap();
         RenderMap();
-        EventManager.OP_EventManager.TriggerEvent(EventName.EVENT_CAMERA_SETUP);
+        PlaceBuffs();
+        PlaceEnemies();
     }
     #region Frame
     public void ClearLayoutData()
@@ -72,6 +91,11 @@ public class Board : MonoBehaviour
         this.height = this.levelInput.height;
         this.wallBreakingDensity = this.levelInput.wallBreakingDensity;
     }    
+
+    public void GetDataLayout()
+    {
+        BoardLayoutSaveLoad.Instance.LoadData();
+    }
     public void GenerateMap()
     {
         if(this.with %2 == 0) this.with++;
@@ -126,8 +150,8 @@ public class Board : MonoBehaviour
             }
         }
         this.emptysCell.RemoveAll(cell => this.mapData[cell.x, cell.y] == WallType.WallBreakable);
-    }
 
+    }
     public void PlaceBuffs()
     {
         int inDex = 0;
@@ -152,7 +176,8 @@ public class Board : MonoBehaviour
                 inDex++;
             }        
         }
-        this.door.transform.position = this.wallBreaksList[inDex].transform.position;
+        this.door.transform.position = this.wallBreaksList[Random.Range(0, inDex)].transform.position;
+        this.mapData[(int)this.door.transform.position.x, (int)this.door.transform.position.y] = WallType.Door;
     }
     public void PlaceEnemies()
     {
@@ -248,11 +273,17 @@ public class Board : MonoBehaviour
                     case WallType.Spawn:
                         this.playerPrefab.transform.position = new Vector2(x, y);
                         break;
+                    case WallType.Door:
+                    {
+                        wallbreaked = SpawnPrefab(KeyPool.KEY_WALL_BREAKED, new Vector2(x, y), this.transform);
+                        if (wallbreaked != null)
+                            this.wallBreaksList.Add(wallbreaked);
+                        this.door.transform.position = new Vector2(x, y);
+                        break;
+                    }                     
                 }
             }                 
         }
-        PlaceBuffs();
-        PlaceEnemies();
     }
     #endregion
     #region CheckBombSlot
@@ -276,12 +307,12 @@ public class Board : MonoBehaviour
     void SubscribeEvent()
     {
         EventManager.OP_EventManager.Subscribe<Vector2Int>(EventName.EVENT_BOARD_EMPTYLOCATION, EmptyLocation);
-        EventManager.OP_EventManager.Subscribe(EventName.EVENT_BOARD_LOADLEVEL, LoadLevel);
+        EventManager.OP_EventManager.Subscribe(EventName.EVENT_BOARD_LOADLEVEL, LoadNextLevel);
     }    
     private void OnDestroy() //Unsubcribe
     {
         EventManager.OP_EventManager.Unsubscribe<Vector2Int>(EventName.EVENT_BOARD_EMPTYLOCATION, EmptyLocation);
-        EventManager.OP_EventManager.Unsubscribe(EventName.EVENT_BOARD_LOADLEVEL, LoadLevel);
+        EventManager.OP_EventManager.Unsubscribe(EventName.EVENT_BOARD_LOADLEVEL, LoadNextLevel);
     }
     #endregion  
 }

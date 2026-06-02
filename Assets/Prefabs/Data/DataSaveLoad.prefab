@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8920114407700390122}
   - component: {fileID: 1441300674739523403}
   - component: {fileID: 2104365539564246969}
+  - component: {fileID: 5770455458398632194}
   m_Layer: 0
   m_Name: DataSaveLoad
   m_TagString: Untagged
@@ -70,3 +71,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d810125f6477744bb007e7d831dd985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VolumeSaveLoad
+--- !u!114 &5770455458398632194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926065672682130379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a5addc25b095a469a2c9e6b280607d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardLayoutSaveLoad

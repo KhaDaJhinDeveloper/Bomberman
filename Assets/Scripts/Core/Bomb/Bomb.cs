@@ -57,13 +57,13 @@ public class Bomb : MonoBehaviour
                 WallType type = this.board.mapData[cellPos.x, cellPos.y];
                 if ((type == WallType.WallFixed))
                     break;
-                else if(type == WallType.WallBreakable)
+                else if(type == WallType.WallBreakable || type == WallType.Door)
                 {
                     ExplodeCell(cellPos);
                     this.board.EmptyLocation(cellPos);
                     break;
                 }    
-                else if(type == WallType.Empty || type == WallType.Spawn)
+                else if(type == WallType.Empty || type == WallType.Spawn || type == WallType.Door)
                 {
                     ExplodeCell(cellPos);
                 } 

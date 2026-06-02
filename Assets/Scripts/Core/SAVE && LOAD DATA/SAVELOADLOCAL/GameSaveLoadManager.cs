@@ -16,6 +16,7 @@ public class GameSaveLoadManager : Singleton<GameSaveLoadManager>, IData
     {
         GameStateSaveLoad.Instance.DeleteData();
         VolumeSaveLoad.Instance.DeleteData();
+        BoardLayoutSaveLoad.Instance.DeleteData();
     }
 
 }
