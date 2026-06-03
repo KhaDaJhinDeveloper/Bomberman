@@ -36,5 +36,5 @@ public class VolumeSaveLoad : Singleton<VolumeSaveLoad>, IData
         JsonFileUtility.DeleteJsonFile(FILE_DATA_VOLUME);
         VolumeData volumeData = new VolumeData();
     }
-
+    public bool HasData() => JsonFileUtility.JsonFileExists(FILE_DATA_VOLUME);
 }

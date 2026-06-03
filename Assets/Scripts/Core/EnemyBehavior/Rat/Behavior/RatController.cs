@@ -3,7 +3,6 @@ using UnityEngine;
 public class RatController : EnemyController
 {
     #region Input
-    [SerializeField] protected KeyPool key;
     protected Rigidbody2D rb;
     protected Animator ani;
     protected EnemyStats stats;

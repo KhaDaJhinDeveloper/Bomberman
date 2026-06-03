@@ -176,7 +176,7 @@ public class Board : MonoBehaviour
                 inDex++;
             }        
         }
-        this.door.transform.position = this.wallBreaksList[Random.Range(0, inDex)].transform.position;
+        this.door.transform.position = this.wallBreaksList[Random.Range(inDex+1, this.wallBreaksList.Count-1)].transform.position;
         this.mapData[(int)this.door.transform.position.x, (int)this.door.transform.position.y] = WallType.Door;
     }
     public void PlaceEnemies()
@@ -289,7 +289,11 @@ public class Board : MonoBehaviour
     #region CheckBombSlot
     public bool BombsExist(Vector2Int pos)  =>  this.mapData[pos.x, pos.y] == WallType.Bomb || this.mapData[pos.x, pos.y] == WallType.WallBreakable;
     public void MarkTheBombLocation(Vector2Int pos) => this.mapData[pos.x, pos.y] = WallType.Bomb;
-    public void EmptyLocation(Vector2Int pos) => this.mapData[pos.x, pos.y] = WallType.Empty;   
+    public void EmptyLocation(Vector2Int pos)
+    {
+        if (this.mapData[pos.x, pos.y] == WallType.Door) return;
+        this.mapData[pos.x, pos.y] = WallType.Empty;
+    } 
     #endregion
     public GameObject SpawnPrefab(KeyPool key, Vector2 pos, Transform parent)
     {

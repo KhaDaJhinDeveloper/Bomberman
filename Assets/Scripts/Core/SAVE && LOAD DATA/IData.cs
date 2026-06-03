@@ -5,4 +5,5 @@ public interface IData
     public void SaveData();
     public void LoadData();
     public void DeleteData();
+    public bool HasData();
 }

@@ -14,7 +14,8 @@ public class PlayerStats : MonoBehaviour
     private bool isDieath;
     public void Start()
     {
-        StatsDefault();
+        if(!GameStateSaveLoad.Instance.HasData())
+            StatsDefault();
         this.rb = GetComponent<Rigidbody2D>();
     }
     public void StatsDefault()

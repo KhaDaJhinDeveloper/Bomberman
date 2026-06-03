@@ -27,4 +27,8 @@ public class BuffPickUp : MonoBehaviour
             this.canInterac = true;
         }
     }
+    private void OnEnable()
+    {
+        this.canInterac = true;
+    }
 }

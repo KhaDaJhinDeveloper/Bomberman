@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e92c048f48e7954787b4195b2d19e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
+  Key: 10
   statsData: {fileID: 11400000, guid: 6f2dd35c60b1dba40b7c32a60d0301c6, type: 2}
   heaalth: 0
   speed: 0

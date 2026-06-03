@@ -1,3 +1,4 @@
+using Assets.Scripts.NameTag;
 using System.Collections;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ public class Explode : MonoBehaviour
         if (collision.gameObject.CompareTag(Tag.TAG_WALLBREAK))
         {
             ObjectPooling.Instance.ReturnToPool(KeyPool.KEY_WALL_BREAKED, collision.gameObject);
+            EventManager.Instance.TriggerEvent(EventName.EVENT_BOARD_EMPTYLOCATION);
         }
     }
     IEnumerator Hide()

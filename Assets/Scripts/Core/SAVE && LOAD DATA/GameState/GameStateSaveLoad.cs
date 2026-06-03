@@ -22,6 +22,7 @@ public class GameStateSaveLoad : Singleton<GameStateSaveLoad>, IData
     public void LoadData()
     {
         GameStateData gameStateData = JsonFileUtility.LoadFromJson<GameStateData>(FILE_DATA_GAMESTATE);
+        if ( gameStateData == null ) return;
         PlayerStats playerStats = GameObject.FindWithTag(Tag.TAG_PLAYER).GetComponent<PlayerStats>();
         LevelManager levelManager = LevelManager.Instance;
         if (levelManager != null && playerStats != null)

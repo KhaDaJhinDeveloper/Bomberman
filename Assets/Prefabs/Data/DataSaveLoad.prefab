@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1441300674739523403}
   - component: {fileID: 2104365539564246969}
   - component: {fileID: 5770455458398632194}
+  - component: {fileID: 8589648085888888428}
+  - component: {fileID: 5804210741994566136}
   m_Layer: 0
   m_Name: DataSaveLoad
   m_TagString: Untagged
@@ -83,3 +85,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a5addc25b095a469a2c9e6b280607d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardLayoutSaveLoad
+--- !u!114 &8589648085888888428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926065672682130379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398c92e4c86647042b72a2cd6f08572d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuffSaveLoad
+--- !u!114 &5804210741994566136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926065672682130379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380782d788e88fa4ea413f0747787e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySaveLoad

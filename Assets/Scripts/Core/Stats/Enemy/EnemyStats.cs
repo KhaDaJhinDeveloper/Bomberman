@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
+    public KeyPool Key;
     public EnemyStatsData statsData;
     public int heaalth;
     public float speed;

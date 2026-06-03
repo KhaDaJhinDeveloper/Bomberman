@@ -54,7 +54,7 @@ public class Rat_Behavior : RatController
         yield return new WaitForSeconds(1f);
         Reset();
         this.isDeath = false;
-        ObjectPooling.Instance.ReturnToPool(this.key, this.gameObject);
+        ObjectPooling.Instance.ReturnToPool(this.stats.Key, this.gameObject);
     }    
     void ResetPosition()
     {

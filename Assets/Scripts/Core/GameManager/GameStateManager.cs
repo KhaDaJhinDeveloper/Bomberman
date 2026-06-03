@@ -1,4 +1,5 @@
 using Assets.Scripts.NameTag;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,11 +19,17 @@ public class GameStateManager: Singleton<GameStateManager>
     public void NewGame()
     {
         Time.timeScale = 1f;
+        GameSaveLoadManager.Instance.DeleteStateData();
         LevelManager.Instance.ResetLevel();
         this.enemyDensity = 0;
         SceneManager.LoadScene("SinglePlayer");
         SoundManager.Instance.PlayMusicBG(SoundManager.Instance.bg_Play);
     }
+    public void Continue()
+    {
+        Time.timeScale = 1f;
+        StartCoroutine(LoadContinueData());
+    }    
     public void ReTry()
     {
         Time.timeScale = 1f;
@@ -59,6 +66,15 @@ public class GameStateManager: Singleton<GameStateManager>
         Time.timeScale = 1f;
         SoundManager.Instance.PlayMusicBG(SoundManager.Instance.bg_MainMenu);
         SceneManager.LoadScene("MainMenu");
+    }
+
+    IEnumerator LoadContinueData()
+    {
+        SceneManager.LoadScene("SinglePlayer");
+        yield return null;
+        yield return null;
+        GameSaveLoadManager.Instance.LoadData();
+        SoundManager.Instance.PlayMusicBG(SoundManager.Instance.bg_Play);
     }
     #endregion
 }
