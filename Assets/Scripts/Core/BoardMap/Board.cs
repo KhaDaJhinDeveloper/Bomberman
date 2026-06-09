@@ -280,7 +280,16 @@ public class Board : MonoBehaviour
                             this.wallBreaksList.Add(wallbreaked);
                         this.door.transform.position = new Vector2(x, y);
                         break;
-                    }                     
+                    }
+                    case WallType.Bomb:
+                    {
+                        GameObject bomb = SpawnPrefab(KeyPool.KEY_BOMB, new Vector2(x, y));
+                        if(bomb != null)
+                        {
+                            bomb.transform.position = new Vector2(x, y);
+                        }
+                        break;
+                    }
                 }
             }                 
         }
@@ -295,7 +304,7 @@ public class Board : MonoBehaviour
         this.mapData[pos.x, pos.y] = WallType.Empty;
     } 
     #endregion
-    public GameObject SpawnPrefab(KeyPool key, Vector2 pos, Transform parent)
+    public GameObject SpawnPrefab(KeyPool key, Vector2 pos, Transform parent = null)
     {
         GameObject obj = ObjectPooling.Instance.GetPool(key, parent);
         if (obj == null)

@@ -1,18 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0e2dd3f0e044e64d9e6448d341f76fd, type: 3}
-  m_Name: ExtraBomb
-  m_EditorClassIdentifier: Assembly-CSharp::BuffData
-  buffKey: 5
-  duration: 0
-  type: 2
-  value: 1
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e816fdc5a7fadf37b5761cf231e58777ae25951195250b0675a2f843fcd9a82
+size 489

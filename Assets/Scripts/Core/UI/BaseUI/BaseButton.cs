@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BaseButton : MonoBehaviour
+public abstract class BaseButton : MonoBehaviour
 {
     private Button button;
     protected virtual void Start()

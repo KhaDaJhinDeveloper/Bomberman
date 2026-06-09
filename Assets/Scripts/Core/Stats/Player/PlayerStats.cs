@@ -14,14 +14,16 @@ public class PlayerStats : MonoBehaviour
     private bool isDieath;
     public void Start()
     {
-        if(!GameStateSaveLoad.Instance.HasData())
+        bool isMultiplayer = Unity.Netcode.NetworkManager.Singleton != null &&
+                         Unity.Netcode.NetworkManager.Singleton.IsClient;
+        if (isMultiplayer || !GameStateSaveLoad.Instance.HasData() || GameStateSaveLoad.Instance == null)
             StatsDefault();
         this.rb = GetComponent<Rigidbody2D>();
+        this.playAni = GetComponent<PlayerAnimation>();
     }
     public void StatsDefault()
     {
         PlayerStatsDefault statsDefault = new PlayerStatsDefault();
-        this.playAni = GetComponent<PlayerAnimation>();
         this.health = statsDefault.health;
         this.speed = statsDefault.speed;
         this.bombRange = statsDefault.bombRange;

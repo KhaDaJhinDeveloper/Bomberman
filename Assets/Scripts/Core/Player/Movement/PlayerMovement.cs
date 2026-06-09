@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI;
 public class PlayerMovement : MonoBehaviour
 {
     private PlayerStats playerStats;

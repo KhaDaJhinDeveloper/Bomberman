@@ -1,26 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
-  m_Name: MainMenuLabels
-  m_EditorClassIdentifier: Unity.Localization.Editor::UnityEditor.Localization.StringTableCollection
-  m_SharedTableData: {fileID: 11400000, guid: d5599e2eabe32c84f9e3033d94ab0311, type: 2}
-  m_Tables:
-  - {fileID: 11400000, guid: 8fd85b66ea9d54e4d950c8c633b96d1c, type: 2}
-  - {fileID: 11400000, guid: 8b7bf3e497bed0d42a3eb0d79918a01a, type: 2}
-  - {fileID: 11400000, guid: e63f23a6594e2d946ac5d1c5019d5c87, type: 2}
-  - {fileID: 11400000, guid: 40e50393eb9cba4459bed3b516054d05, type: 2}
-  - {fileID: 11400000, guid: de2e3ca6dcbe50648b4a95b95b19227c, type: 2}
-  m_Extensions: []
-  m_Group: String Table
-  references:
-    version: 2
-    RefIds: []
+version https://git-lfs.github.com/spec/v1
+oid sha256:6e45128a57e39fc2e2c002e7672f0c862a233a2ee0b2d58b4c79532681cb2a75
+size 1050

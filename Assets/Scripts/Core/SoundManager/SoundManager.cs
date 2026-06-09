@@ -33,7 +33,7 @@ public class SoundManager : Singleton<SoundManager>
     }
     private void Start()
     {
-        VolumeSaveLoad.Instance.LoadData();
+        SettingSaveLoad.Instance.LoadData();
         CreateSoundPool();
         PlayMusicBG(SoundManager.Instance.bg_MainMenu);
     }

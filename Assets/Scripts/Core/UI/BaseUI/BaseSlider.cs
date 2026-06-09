@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BaseSlider : MonoBehaviour
+public abstract class BaseSlider : MonoBehaviour
 {
 
     protected Slider slider;

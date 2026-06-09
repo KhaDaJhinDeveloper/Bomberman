@@ -5,7 +5,7 @@ public class GameSaveLoadManager : Singleton<GameSaveLoadManager>, IData
     public void SaveData()
     {
         GameStateSaveLoad.Instance.SaveData();
-        VolumeSaveLoad.Instance.SaveData();
+        SettingSaveLoad.Instance.SaveData();
         BoardLayoutSaveLoad.Instance.SaveData();
         BuffSaveLoad.Instance.SaveData();
         EnemySaveLoad.Instance.SaveData();
@@ -19,7 +19,7 @@ public class GameSaveLoadManager : Singleton<GameSaveLoadManager>, IData
     public void DeleteData()
     {
         GameStateSaveLoad.Instance.DeleteData();
-        VolumeSaveLoad.Instance.DeleteData();
+        SettingSaveLoad.Instance.DeleteData();
         BoardLayoutSaveLoad.Instance.DeleteData();
         BuffSaveLoad.Instance.DeleteData();
         EnemySaveLoad.Instance.DeleteData();
@@ -34,5 +34,10 @@ public class GameSaveLoadManager : Singleton<GameSaveLoadManager>, IData
     public bool HasData()
     {
         return false;
+    }
+    protected override void OnApplicationQuit()
+    {
+        base.OnApplicationQuit();
+        SettingSaveLoad.Instance.SaveData();
     }
 }

@@ -1,30 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-String-Tables-Japanese (Japan) (ja-JP)
-  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
-  m_GroupName: Localization-String-Tables-Japanese (Japan) (ja-JP)
-  m_GUID: d1ea44be5794dd0429c8efc76675d2f8
-  m_SerializeEntries:
-  - m_GUID: e63f23a6594e2d946ac5d1c5019d5c87
-    m_Address: MainMenuLabels_ja-JP
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ja-JP
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  m_ReadOnly: 1
-  m_Settings: {fileID: 11400000, guid: dd141d3c706365c4eb638f186cad1fbb, type: 2}
-  m_SchemaSet:
-    m_Schemas:
-    - {fileID: 11400000, guid: aed9df778d4b4424a9ecdecb6a90f58a, type: 2}
-    - {fileID: 11400000, guid: ea71a5a31449a10478ffc8640fdbdec0, type: 2}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bbdb1354f92553268209ef5a23e5f15611f113e3395dc672286a09e19f933a83
+size 1321

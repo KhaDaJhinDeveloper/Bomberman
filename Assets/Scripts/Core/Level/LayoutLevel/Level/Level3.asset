@@ -1,27 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74054c36cf9c10e4fa1fb36da8cb37f9, type: 3}
-  m_Name: Level3
-  m_EditorClassIdentifier: Assembly-CSharp::LayoutLevel
-  with: 31
-  height: 15
-  wallBreakingDensity: 0.3
-  itemDensity:
-  - buff: {fileID: 11400000, guid: 01a1567531baaf14b8e30a77ea6d1414, type: 2}
-    amount: 1
-  - buff: {fileID: 11400000, guid: 505e2fc3616a0aa4483f2593b84a283f, type: 2}
-    amount: 1
-  enemies:
-  - keyEnemy: 10
-    amount: 5
-  - keyEnemy: 11
-    amount: 6
+version https://git-lfs.github.com/spec/v1
+oid sha256:f96659dd671fe2616ee30b0ef2d947dee8bffd670f3f653d55bb2f15d7bcdc15
+size 773

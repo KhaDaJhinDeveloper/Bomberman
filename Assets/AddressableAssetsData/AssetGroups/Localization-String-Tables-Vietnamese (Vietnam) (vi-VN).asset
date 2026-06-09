@@ -1,30 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-String-Tables-Vietnamese (Vietnam) (vi-VN)
-  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
-  m_GroupName: Localization-String-Tables-Vietnamese (Vietnam) (vi-VN)
-  m_GUID: 9c9be5fee2a9594419a8f5b5d64de99e
-  m_SerializeEntries:
-  - m_GUID: de2e3ca6dcbe50648b4a95b95b19227c
-    m_Address: MainMenuLabels_vi-VN
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-vi-VN
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  m_ReadOnly: 1
-  m_Settings: {fileID: 11400000, guid: dd141d3c706365c4eb638f186cad1fbb, type: 2}
-  m_SchemaSet:
-    m_Schemas:
-    - {fileID: 11400000, guid: 9cd8750c19a307b49ab6cc41ca53eb6a, type: 2}
-    - {fileID: 11400000, guid: be06c2411c902dd46a98b9d20e5f4ad7, type: 2}
+version https://git-lfs.github.com/spec/v1
+oid sha256:98e8d5b47c99619247431859f31f682bff16b50b5ee9505b8fc5d331fc8da90e
+size 1329

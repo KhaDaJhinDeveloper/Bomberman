@@ -12,7 +12,11 @@ public class EnemyStats : MonoBehaviour
     {
         LoadStatsDefault();
     }
-    private void OnDisable()
+    //private void OnDisable()
+    //{
+    //    LoadStatsDefault();
+    //}
+    private void OnEnable()
     {
         LoadStatsDefault();
     }
