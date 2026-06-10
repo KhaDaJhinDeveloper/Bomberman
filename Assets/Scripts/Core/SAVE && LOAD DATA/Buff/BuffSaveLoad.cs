@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BuffSaveLoad : Singleton<BuffSaveLoad>,IData
 {
@@ -12,12 +13,14 @@ public class BuffSaveLoad : Singleton<BuffSaveLoad>,IData
     public void LoadData()
     {
         BuffITemData buffData = JsonFileUtility.LoadFromJson<BuffITemData>(FILE_DATA_BUFF);
+        Board board = FindFirstObjectByType<Board>();
         if (buffData == null) return;
         foreach(var buff in buffData.buffData)
         {
             GameObject obj = ObjectPooling.Instance.GetPool((KeyPool)buff.BuffKey);
             if (obj == null) continue;
             obj.transform.position = buff.position;
+            board.Bufflist.Add(obj);
         }    
     }
     public void DeleteData()

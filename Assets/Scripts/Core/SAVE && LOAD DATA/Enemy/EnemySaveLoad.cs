@@ -18,6 +18,7 @@ public class EnemySaveLoad : Singleton<EnemySaveLoad>, IData
             GameObject obj = ObjectPooling.Instance.GetPool((KeyPool)enemy.Key);
             if(obj == null) continue;
             obj.transform.position = enemy.position;
+            GameStateManager.Instance.IncreaseEnemyDensity();
         }    
     }
     public void DeleteData()

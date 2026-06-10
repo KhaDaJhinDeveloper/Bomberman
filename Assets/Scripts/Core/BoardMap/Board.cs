@@ -22,7 +22,7 @@ public class Board : MonoBehaviour
     private List<GameObject> wallFixedList = new();
     private List<GameObject> floorList = new ();
     private List<GameObject> buffList = new ();
-
+    public List<GameObject> Bufflist { get => this.buffList; }
     [Header("CountPlayer")]
     public int playerCount;
 

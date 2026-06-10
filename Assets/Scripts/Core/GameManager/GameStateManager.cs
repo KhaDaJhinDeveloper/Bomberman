@@ -57,6 +57,7 @@ public class GameStateManager: Singleton<GameStateManager>
     }
     public void GameOver()
     {
+        GameStateSaveLoad.Instance.DeleteData();
         SoundManager.Instance.StopPlayMusicBG();
         SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PlayerDie);
         EventManager.Instance.TriggerEvent(EventName.EVENT_GAMEOVERUI_SHOW);
