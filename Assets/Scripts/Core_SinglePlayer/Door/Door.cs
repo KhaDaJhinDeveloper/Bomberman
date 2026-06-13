@@ -6,6 +6,7 @@ public class Door : MonoBehaviour
 {
     private bool isTriggerWall;
     private bool isSpawn;
+    private bool isLoadLevel;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag(Tag.TAG_WALLBREAK))
@@ -15,7 +16,7 @@ public class Door : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag(Tag.TAG_PLAYER))
         {
-            if (GameStateManager.Instance.CanNextLevel() && !this.isTriggerWall)
+            if (GameStateManager.Instance.CanNextLevel() && !this.isTriggerWall && !this.isLoadLevel)
             {
                 StartCoroutine(NextLevel());
             }
@@ -58,10 +59,15 @@ public class Door : MonoBehaviour
     }
     private IEnumerator NextLevel()
     {
-        SoundManager.Instance.StopPlayMusicBG();
-        SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PassLevel);
-        yield return new WaitForSeconds(3f);
-        TransitionScene.Instance.PlayTransition(() => GameStateManager.Instance.NextLevel());
+        if(!this.isLoadLevel)
+        {
+            this.isLoadLevel = true;
+            SoundManager.Instance.StopPlayMusicBG();
+            SoundManager.Instance.PlayMusicSFX(SoundManager.Instance.sfx_PassLevel);
+            yield return new WaitForSeconds(3f);
+            this.isLoadLevel = false;
+            TransitionScene.Instance.PlayTransition(() => GameStateManager.Instance.NextLevel());
+        }
     }
     private void OnDestroy()
     {

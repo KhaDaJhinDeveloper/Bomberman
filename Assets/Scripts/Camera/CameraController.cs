@@ -36,7 +36,7 @@ public class CameraController : MonoBehaviour
         float with = cam.orthographicSize * cam.aspect;
         this.minX = with -1;
         this.minY = height -1;
-        this.maxX = this.board.with  - with;
+        this.maxX = this.board.width  - with;
         this.maxY = this.board.height  - height;
         Vector3 startPos = this.player.position + this.os;
         startPos.x = Mathf.Clamp(startPos.x, this.minX, this.maxX);

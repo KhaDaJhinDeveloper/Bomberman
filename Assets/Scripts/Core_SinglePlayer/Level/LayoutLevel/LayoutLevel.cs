@@ -3,7 +3,7 @@ using UnityEngine;
 public class LayoutLevel : ScriptableObject
 {
     [Header("Map")]
-    [Range(19, 99)] public int with;
+    [Range(19, 99)] public int width;
     [Range(11, 99)] public int height;
     [Range(0, 1)] public float wallBreakingDensity;
     public Item[] itemDensity;

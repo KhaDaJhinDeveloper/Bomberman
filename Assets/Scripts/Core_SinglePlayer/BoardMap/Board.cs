@@ -9,7 +9,7 @@ public class Board : MonoBehaviour
     [Header("LayoutLevel")]
     public LayoutLevel levelInput;
     [Header("Map")]
-    public int with;
+    public int width;
     public int height;
     public WallType[,] mapData ;
     public float wallBreakingDensity;
@@ -61,6 +61,7 @@ public class Board : MonoBehaviour
         RenderMap();
         PlaceBuffs();
         PlaceEnemies();
+        EventManager.OP_EventManager.TriggerEvent(EventName.EVENT_CAMERA_SETUP);
     }
     #region Frame
     public void ClearLayoutData()
@@ -87,7 +88,7 @@ public class Board : MonoBehaviour
     public void GetLayoutLevel()
     {
         this.levelInput = LevelManager.Instance.GetLevel();
-        this.with = this.levelInput.with;
+        this.width = this.levelInput.width;
         this.height = this.levelInput.height;
         this.wallBreakingDensity = this.levelInput.wallBreakingDensity;
     }    
@@ -98,21 +99,21 @@ public class Board : MonoBehaviour
     }
     public void GenerateMap()
     {
-        if(this.with %2 == 0) this.with++;
+        if(this.width %2 == 0) this.width++;
         if (this.height % 2 == 0) this.height++;
-        this.mapData = new WallType[this.with, this.height];
+        this.mapData = new WallType[this.width, this.height];
         PlaceFixedWalls(); //Step1
         SpawnPoint();      //Step3
         PlaceBreakWalls(); //Step2
     }
     public void PlaceFixedWalls()
     {
-        this.mapData = new WallType[this.with, this.height];
-        for (int x = 0; x < this.with; x++)
+        //this.mapData = new WallType[this.width, this.height];
+        for (int x = 0; x < this.width; x++)
         {
             for (int y = 0; y < this.height; y++)
             {
-                bool isBorder = (x == 0 || y == 0 || x == this.with -1 || y == this.height -1);
+                bool isBorder = (x == 0 || y == 0 || x == this.width -1 || y == this.height -1);
                 bool isGrid = (x%2 == 0 && y %2 == 0);
                 this.mapData[x, y] = (isBorder || isGrid) ? WallType.WallFixed : WallType.Empty;    
             }
@@ -121,7 +122,7 @@ public class Board : MonoBehaviour
     public void PlaceBreakWalls()
     {
         this.emptysCell = new();
-        for (int x = 0; x < this.with; x++)
+        for (int x = 0; x < this.width; x++)
         {
             for (int y = 0; y < this.height; y++)
             {
@@ -204,12 +205,12 @@ public class Board : MonoBehaviour
     public void SpawnPoint()
     {
         Vector2Int[] cornerSpawn = new Vector2Int[]
-            {
-                new Vector2Int(1, 1), 
-                new Vector2Int(1, this.height - 2), 
-                new Vector2Int(this.with - 2, 1),
-                new Vector2Int(this.with -2, this.height - 2),
-            };
+        {
+            new Vector2Int(1, 1), 
+            new Vector2Int(1, this.height - 2), 
+            new Vector2Int(this.width - 2, 1),
+            new Vector2Int(this.width -2, this.height - 2),
+        };
         int count = Mathf.Clamp(this.playerCount, 1, 4);
         for(int i = 0; i < count; i++)
         {
@@ -237,7 +238,7 @@ public class Board : MonoBehaviour
     }
     public bool IsBounds(int x, int y)
     { 
-        return  x >=0 && x < this.with && y >=0 && y < this.height;
+        return  x >=0 && x < this.width && y >=0 && y < this.height;
     }
     public bool IsNearSpawn(Vector2Int cellPos, int radius)
     {
@@ -251,7 +252,7 @@ public class Board : MonoBehaviour
     #region Render
     public void RenderMap()
     {
-        for(int x = 0; x < this.with; x++)
+        for(int x = 0; x < this.width; x++)
         {
             for (int y = 0; y < this.height; y++)
             {

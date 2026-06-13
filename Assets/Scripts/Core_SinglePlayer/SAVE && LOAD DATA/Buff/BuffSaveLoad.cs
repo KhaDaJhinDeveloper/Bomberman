@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-
 public class BuffSaveLoad : Singleton<BuffSaveLoad>,IData
 {
     private const string FILE_DATA_BUFF = "Buff.json";

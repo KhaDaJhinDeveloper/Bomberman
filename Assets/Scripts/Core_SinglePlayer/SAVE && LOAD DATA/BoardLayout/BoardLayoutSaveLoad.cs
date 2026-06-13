@@ -8,7 +8,7 @@ public class BoardLayoutSaveLoad : Singleton<BoardLayoutSaveLoad>, IData
         Board board = FindFirstObjectByType<Board>();
         if (board != null)
         {
-            BoardLayoutData boardData = new BoardLayoutData(board.mapData, board.with, board.height);
+            BoardLayoutData boardData = new BoardLayoutData(board.mapData, board.width, board.height);
             JsonFileUtility.SaveToJson(boardData, FILE_DATA_LAYOUTBOARD);
         }
     }
@@ -19,9 +19,9 @@ public class BoardLayoutSaveLoad : Singleton<BoardLayoutSaveLoad>, IData
         Board board = FindFirstObjectByType<Board>();
         if (board != null)
         {
-            board.with = boardData.with;
+            board.width = boardData.with;
             board.height = boardData.height;
-            board.mapData = LoadToMap(boardData,board.with, board.height);
+            board.mapData = LoadToMap(boardData,board.width, board.height);
         }
     }
     public void DeleteData()
